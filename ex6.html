@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Constante</title>
+  <style>
+    .aviso {
+      background: #fdd;
+      padding: 10px;
+      border: 1px solid red;
+      color: darkred;
+      font-family: sans-serif;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="aviso">Abra o console para ver o erro ao tentar alterar uma constante.</div>
+  <script>
+    const PI = 3.14;
+    try {
+      PI = 3.1415;
+    } catch (erro) {
+      console.error("Erro: Não é possível alterar o valor de uma constante. →", erro.message);
+    }
+  </script>
+</body>
+</html>

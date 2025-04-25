@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Verificação de Valor</title>
+  <style>
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+    body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+  </style>
+</head>
+<body>
+
+  <h1>Verificação de Valor</h1>
+  <button onclick="verificarValor()">Verificar Número</button>
+
+  <script>
+    function verificarValor() {
+      let numero = parseInt(prompt("Digite um número:"));
+      
+      if (numero > 10) {
+        console.log("O número " + numero + " é maior que 10.");
+      } else {
+        console.log("O número " + numero + " não é maior que 10.");
+      }
+    }
+  </script>
+
+</body>
+</html>

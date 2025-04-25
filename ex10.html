@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Texto com Alerta</title>
+  <style>
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+  <input type="text" id="mensagem" placeholder="Digite algo...">
+  <button onclick="mostrarTexto()">Mostrar Alerta</button>
+
+  <script>
+    function mostrarTexto() {
+      let texto = document.getElementById("mensagem").value;
+      alert("Você digitou: " + texto);
+    }
+  </script>
+</body>
+</html>

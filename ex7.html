@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Var - Redeclaração</title>
+  <style>
+    button {
+      font-size: 16px;
+      padding: 10px;
+      margin-top: 50px;
+    }
+    body {
+      font-family: sans-serif;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Redeclaração com var</h1>
+  <button onclick="testarVar()">Clique para testar</button>
+
+  <script>
+    function testarVar() {
+      var mensagem = "Primeira declaração com var";
+      console.log("Antes da reatribuição:", mensagem);
+
+    
+      var mensagem = "Segunda declaração com var (sobrescrita)";
+      console.log("Depois da reatribuição:", mensagem);
+    }
+  </script>
+</body>
+</html>

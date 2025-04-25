@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Contador de Cliques</title>
+  <style>
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+    body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+  </style>
+</head>
+<body>
+
+  <h1>Contador de Cliques</h1>
+  <button onclick="contarCliques()">Clique Aqui</button>
+
+  <script>
+    let contador = 0;
+
+    function contarCliques() {
+      contador++;
+      alert("Número de cliques: " + contador);
+    }
+  </script>
+
+</body>
+</html>

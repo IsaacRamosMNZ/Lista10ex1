@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Multiplicação Simples</title>
+  <style>
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+  </style>
+</head>
+<body>
+
+  <h1>Multiplicação Simples</h1>
+  <button onclick="multiplicar()">Calcular Multiplicação</button>
+
+  <script>
+    function multiplicar() {
+      let num1 = parseFloat(prompt("Digite o primeiro número:"));
+      let num2 = parseFloat(prompt("Digite o segundo número:"));
+      alert("A multiplicação é: " + (num1 * num2));
+    }
+  </script>
+
+</body>
+</html>

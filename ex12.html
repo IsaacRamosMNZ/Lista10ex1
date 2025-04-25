@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Saudação Personalizada</title>
+  <style>
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+    body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+  </style>
+</head>
+<body>
+
+  <h1>Saudação Personalizada</h1>
+  <button onclick="saudacao()">Saudar</button>
+
+  <script>
+    function saudacao() {
+      let nome = prompt("Qual é o seu nome?");
+      let turno = prompt("Em que turno você estuda? (M - manhã, T - tarde, N - noite)");
+      
+      if (turno === 'M') {
+        console.log("Bom dia, " + nome + "!");
+      } else if (turno === 'T') {
+        console.log("Boa tarde, " + nome + "!");
+      } else if (turno === 'N') {
+        console.log("Boa noite, " + nome + "!");
+      } else {
+        console.log("Turno inválido.");
+      }
+    }
+  </script>
+
+</body>
+</html>

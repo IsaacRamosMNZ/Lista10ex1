@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Conversão e Soma</title>
+  <style>
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+    body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+  </style>
+</head>
+<body>
+
+  <h1>Conversão e Soma</h1>
+  <button onclick="somar()">Somar Números</button>
+
+  <script>
+    function somar() {
+      let num1 = prompt("Digite o primeiro número:");
+      let num2 = prompt("Digite o segundo número:");
+      
+      num1 = Number(num1);
+      num2 = Number(num2);
+      
+      alert("A soma é: " + (num1 + num2));
+    }
+  </script>
+
+</body>
+</html>
